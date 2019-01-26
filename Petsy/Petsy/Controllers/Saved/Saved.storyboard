@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sxl-Vb-koP">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Saved View Controller-->
+        <scene sceneID="THu-RD-A25">
+            <objects>
+                <viewController id="sxl-Vb-koP" customClass="SavedViewController" customModule="Petsy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ysp-hK-k3e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="N3b-Zc-7X1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="24" minimumInteritemSpacing="24" id="y5X-ST-mwR">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="24" minY="24" maxX="24" maxY="24"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="sxl-Vb-koP" id="clC-4G-9vg"/>
+                                    <outlet property="delegate" destination="sxl-Vb-koP" id="U8X-cb-Kuf"/>
+                                </connections>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="GhM-Kt-GAU">
+                                <rect key="frame" x="48" y="281.5" width="279" height="105.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swiping right on a pet saves it here for later!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toX-ne-zNg">
+                                        <rect key="frame" x="-48" y="0.0" width="0.0" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZ0-0H-QcN">
+                                        <rect key="frame" x="109.5" y="45.5" width="60" height="60"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.20000000000000001" height="0.20000000000000001"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="jSh-XH-8Bq"/>
+                                            <constraint firstAttribute="height" constant="60" id="mfS-lJ-LtR"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="heart">
+                                            <color key="titleShadowColor" red="0.99448785699999998" green="0.99155114300000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="N3b-Zc-7X1" secondAttribute="trailing" id="5ed-ih-jhV"/>
+                            <constraint firstItem="GhM-Kt-GAU" firstAttribute="centerY" secondItem="ysp-hK-k3e" secondAttribute="centerY" id="7xH-fc-gCN"/>
+                            <constraint firstAttribute="bottom" secondItem="N3b-Zc-7X1" secondAttribute="bottom" id="C3z-hB-R8r"/>
+                            <constraint firstItem="N3b-Zc-7X1" firstAttribute="top" secondItem="ysp-hK-k3e" secondAttribute="top" id="VmH-V6-SJM"/>
+                            <constraint firstItem="N3b-Zc-7X1" firstAttribute="leading" secondItem="ysp-hK-k3e" secondAttribute="leading" id="Wk5-Ys-oQa"/>
+                            <constraint firstItem="lBA-CP-ht0" firstAttribute="trailing" secondItem="GhM-Kt-GAU" secondAttribute="trailing" constant="48" id="z5G-ab-yeO"/>
+                            <constraint firstItem="GhM-Kt-GAU" firstAttribute="leading" secondItem="lBA-CP-ht0" secondAttribute="leading" constant="48" id="zCx-jI-hI1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lBA-CP-ht0"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="N3b-Zc-7X1" id="rcD-IJ-boC"/>
+                        <outlet property="explanationButton" destination="MZ0-0H-QcN" id="07C-OI-Pg0"/>
+                        <outlet property="explanationLabel" destination="toX-ne-zNg" id="hmX-JA-q87"/>
+                        <outlet property="explanationView" destination="GhM-Kt-GAU" id="70m-Wl-vpN"/>
+                        <segue destination="6ng-LJ-J2g" kind="presentation" identifier="ShowProfile" id="bjf-vq-yBM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qfm-vr-eZn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="236" y="188.45577211394306"/>
+        </scene>
+        <!--PetProfile-->
+        <scene sceneID="ofM-Z3-eh3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PetProfile" id="6ng-LJ-J2g" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tVf-Wt-ydJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="867" y="27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart" width="25" height="25"/>
+    </resources>
+</document>
