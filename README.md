@@ -1,11 +1,11 @@
 ## Petsy 🐶🐱🐰
-`Petsy` is an iOS app built to help more than `370,000` pets find new homes. It's an experiment we built over an energy-drink fueled weekend, where we set out to gamify pet adoption. Think- `Tinder` for adoptable pets!   
+`Petsy` is an iOS app built to help more than `370,000` pets find new homes. It's an experiment we built over an energy-drink fueled weekend, where we set out to gamify pet adoption. Think `Tinder` for adoptable pets!   
 
 [![Appstore](assets/store.png)](https://itunes.apple.com/us/app/petsy/id1313508114?ls=1&mt=8)
 
 
 ### Feature list
-- [x] `Browse` more than 370,000 adorable, adoptable animals in yout area   
+- [x] `Browse` more than 370,000 adorable, adoptable animals in your area   
 - [x] `Save` animals so you can find them again anytime   
 - [x] `Pass` on animals that aren't a match   
 - [x] `Complete profiles` for every single pet  
